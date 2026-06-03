@@ -7,7 +7,7 @@ const db = require("./db");
 // 1. CORS Configuration
 // This allows your frontend (port 5173) to talk to this backend
 app.use(cors({
-  origin: "http://localhost:5173", 
+  origin: ["http://localhost:5173", "https://tourmaline-sorbet-fe482d.netlify.app"], 
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }));
