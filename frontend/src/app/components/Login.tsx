@@ -26,7 +26,7 @@ export function Login() {
     }
 
     try {
-      const res = await fetch("http://localhost:3000/api/customers/login", {
+      const res = await fetch("https://rentigo-backendrw.onrender.com/api/customers/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json"

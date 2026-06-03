@@ -12,7 +12,7 @@ export function MyBookings() {
 
   const fetchBookings = () => {
     if (!user || !user.customer_id) return;
-    fetch(`http://localhost:3000/api/bookings/${user.customer_id}`)
+    fetch(`https://rentigo-backendrw.onrender.com/api/bookings/${user.customer_id}`)
       .then((res) => res.json())
       .then((data) => setAllBookings(Array.isArray(data) ? data : []))
       .catch((err) => console.error("Bookings fetch error:", err));
@@ -20,7 +20,7 @@ export function MyBookings() {
 
   useEffect(() => {
     fetchBookings();
-    fetch("http://localhost:3000/api/vehicles")
+    fetch("https://rentigo-backendrw.onrender.com/api/vehicles")
       .then((res) => res.json())
       .then((data) => setVehicles(Array.isArray(data) ? data : []))
       .catch((err) => console.error("Vehicles fetch error:", err));
@@ -31,7 +31,7 @@ export function MyBookings() {
     if (!window.confirm("Are you sure you want to cancel this booking?")) return;
 
     try {
-      const response = await fetch(`http://localhost:3000/api/bookings/cancel/${bookingId}`, {
+      const response = await fetch(`https://rentigo-backendrw.onrender.com/api/bookings/cancel/${bookingId}`, {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ vehicle_id: vehicleId })

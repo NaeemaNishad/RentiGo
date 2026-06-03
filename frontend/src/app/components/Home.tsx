@@ -20,7 +20,7 @@ export function Home() {
 
   useEffect(() => {
     setIsLoading(true); // Ensure loading is true when fetch starts
-    fetch("http://localhost:3000/api/vehicles")
+    fetch("https://rentigo-backendrw.onrender.com/api/vehicles")
       .then(res => res.json())
       .then(data => {
         setAllVehicles(data);

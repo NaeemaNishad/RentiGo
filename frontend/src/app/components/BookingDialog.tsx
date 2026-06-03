@@ -32,7 +32,7 @@ export function BookingDialog({ vehicle, open, onOpenChange }: any) {
     const returnDate = calculateReturnDate(rentalDate, numberOfDays);
 
     try {
-      const response = await fetch("http://localhost:3000/api/bookings", {
+      const response = await fetch("https://rentigo-backendrw.onrender.com/api/bookings", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

@@ -10,7 +10,7 @@ export function Profile() {
 
   useEffect(() => {
     if (user?.customer_id) {
-      fetch(`http://localhost:3000/api/bookings/${user.customer_id}`)
+      fetch(`https://rentigo-backendrw.onrender.com/api/bookings/${user.customer_id}`)
         .then(res => res.json())
         .then(data => setUserBookings(data))
         .catch(err => console.error(err));

@@ -31,7 +31,7 @@ export function Signup() {
 
   try {
     // ✅ The full, correct URL including the /customers/ prefix
-    const response = await fetch("http://localhost:3000/api/customers/signup", {
+    const response = await fetch("https://rentigo-backendrw.onrender.com/api/customers/signup", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
