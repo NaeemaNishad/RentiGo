@@ -39,7 +39,7 @@ export function AboutUs() {
     <div className="max-w-6xl mx-auto space-y-12">
       {/* Hero Section */}
       <div className="text-center space-y-4">
-        <h1 className="text-4xl font-bold text-gray-900">About RentCar</h1>
+        <h1 className="text-4xl font-bold text-gray-900">About RentiGo</h1>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
           Your trusted partner for vehicle rentals across India. We make renting vehicles simple, affordable, and convenient.
         </p>
@@ -50,7 +50,7 @@ export function AboutUs() {
         <CardContent className="p-8 md:p-12">
           <h2 className="text-3xl font-bold mb-4">Our Story</h2>
           <p className="text-lg text-white/90 leading-relaxed mb-4">
-            Founded in 2020, RentCar has grown to become one of India's leading vehicle rental platforms. 
+            Founded in 2020, RentiGo has grown to become one of India's leading vehicle rental platforms. 
             We started with a simple vision: to make vehicle rentals accessible, transparent, and hassle-free for everyone.
           </p>
           <p className="text-lg text-white/90 leading-relaxed">
@@ -137,9 +137,9 @@ export function AboutUs() {
             Have questions? We're here to help! Contact us anytime for assistance with your bookings or queries.
           </p>
           <div className="space-y-2">
-            <p className="text-lg"><span className="font-semibold">Email:</span> support@rentcar.com</p>
+            <p className="text-lg"><span className="font-semibold">Email:</span> support@rentiGo.com</p>
             <p className="text-lg"><span className="font-semibold">Phone:</span> +91 1800-123-4567</p>
-            <p className="text-lg"><span className="font-semibold">Address:</span> Mumbai, Maharashtra, India</p>
+            <p className="text-lg"><span className="font-semibold">Address:</span> Delhi, New Delhi, India</p>
           </div>
         </CardContent>
       </Card>
