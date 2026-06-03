@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:3000/api";
+const BASE_URL = "https://rentigo-backendnw.onrender.com/api";
 
 // ---------- AUTH ----------
 export async function loginCustomer(phone: string, password: string) {
