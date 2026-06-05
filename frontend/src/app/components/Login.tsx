@@ -70,7 +70,7 @@ export function Login() {
           </div>
           <CardTitle className="text-2xl text-center">Welcome Back</CardTitle>
           <CardDescription className="text-center">
-            Login to your RentCar account
+            Login to your RentiGo account
           </CardDescription>
         </CardHeader>
         <form onSubmit={handleSubmit}>
